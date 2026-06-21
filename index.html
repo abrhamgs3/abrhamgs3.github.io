@@ -3,30 +3,32 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Academic portfolio of Dr. Abrha Megos Meressa, PhD in Economics. Research in development economics, labor markets, and institutional analysis in Sub-Saharan Africa.">
+  <meta name="description" content="Academic portfolio of Dr. Abrha Megos Meressa, PhD in Economics. Specializing in Environmental Economics, Behavioral Economics, and Experimental Methods with a focus on Sub-Saharan Africa.">
   <meta name="author" content="Dr. Abrha Megos Meressa">
-  <meta property="og:title" content="Dr. Abrha Megos Meressa | Economist">
-  <meta property="og:description" content="PhD in Economics. Research in development economics, labor markets, and African economic history.">
+  <meta property="og:title" content="Dr. Abrha Megos Meressa | Environmental &amp; Behavioral Economist">
+  <meta property="og:description" content="PhD in Economics. Environmental policy, behavioral and experimental economics, climate and development.">
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abrhamgs3.github.io">
-  <title>Dr. Abrha Megos Meressa | Economist</title>
+  <title>Dr. Abrha Megos Meressa | Environmental &amp; Behavioral Economist</title>
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-  <!-- ═══════════════════════════════════════════
+  <!-- ════════════════════════════════════
        NAVIGATION
-  ═══════════════════════════════════════════ -->
+  ════════════════════════════════════ -->
   <nav id="navbar" role="navigation" aria-label="Main navigation">
     <div class="nav-container">
-      <a href="#home" class="nav-brand" aria-label="Go to top">Dr. Abrha M. Meressa</a>
-      <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation menu" aria-expanded="false" aria-controls="navLinks">
-        <span></span>
-        <span></span>
-        <span></span>
+      <a href="#home" class="nav-brand" aria-label="Home — Dr. A. M. Meressa">Dr. A. M. Meressa</a>
+      <button class="nav-toggle" id="navToggle"
+              aria-label="Toggle navigation menu"
+              aria-expanded="false"
+              aria-controls="navLinks">
+        <span></span><span></span><span></span>
       </button>
       <ul class="nav-links" id="navLinks" role="list">
         <li><a href="#research"  class="nav-link">Research</a></li>
+        <li><a href="#lab"       class="nav-link">Lab &amp; Experiments</a></li>
         <li><a href="#teaching"  class="nav-link">Teaching</a></li>
         <li><a href="#cv"        class="nav-link">CV</a></li>
         <li><a href="#contact"   class="nav-link">Contact</a></li>
@@ -36,226 +38,503 @@
 
   <main>
 
-    <!-- ═══════════════════════════════════════════
+    <!-- ════════════════════════════════════
          HERO
-    ═══════════════════════════════════════════ -->
+    ════════════════════════════════════ -->
     <section id="home" class="hero" aria-label="Introduction">
-      <div class="hero-container">
+      <div class="hero-inner">
 
-        <div class="hero-content">
-          <span class="hero-eyebrow">Academic Portfolio</span>
-          <h1 class="hero-name">Dr. Abrha Megos Meressa</h1>
-          <p class="hero-title">PhD in Economics</p>
-          <div class="hero-rule" aria-hidden="true"></div>
-          <p class="hero-bio">
-            I am an economist whose research sits at the intersection of development economics, agricultural markets, and institutional analysis, with a primary focus on Sub-Saharan Africa. My work examines how credit market imperfections, land tenure institutions, and productivity shocks shape household welfare and long-run poverty dynamics. I combine structural econometric models with quasi-experimental designs and detailed panel survey data to generate findings that speak directly to development policy.
-          </p>
-          <div class="hero-actions">
-            <a href="#research" class="btn btn-primary">View Research</a>
-            <a href="cv.pdf"    class="btn btn-outline" target="_blank" rel="noopener noreferrer">Download CV</a>
-          </div>
+        <span class="hero-eyebrow">
+          PhD in Economics &nbsp;&middot;&nbsp; Environmental &amp; Behavioral Economist
+        </span>
+
+        <h1 class="hero-name">Dr. Abrha Megos<br>Meressa</h1>
+
+        <div class="hero-rule" aria-hidden="true"></div>
+
+        <p class="hero-bio">
+          I study how people and institutions respond to environmental constraints, uncertainty, and economic policy—combining environmental economics, behavioral theory, and controlled experiments to generate rigorous, policy-relevant insights for low- and middle-income economies. My work is particularly focused on climate adaptation, resource management, and the behavioral determinants of sustainable decision-making in Sub-Saharan Africa.
+        </p>
+
+        <ul class="hero-tags" aria-label="Research focus areas">
+          <li class="hero-tag">Environmental Policy</li>
+          <li class="hero-tag">Resource Valuation</li>
+          <li class="hero-tag">Behavioral Economics</li>
+          <li class="hero-tag">Lab &amp; Field Experiments</li>
+          <li class="hero-tag">Choice Architecture</li>
+          <li class="hero-tag">Climate &amp; Development</li>
+        </ul>
+
+        <div class="hero-actions">
+          <a href="#research" class="btn btn-primary">View Research</a>
+          <a href="#lab"      class="btn btn-outline">Lab &amp; Experiments</a>
         </div>
 
-        <aside class="hero-sidebar" aria-label="Quick contact and fields">
-          <div class="info-card">
-            <div class="info-item">
-              <span class="info-label">Position</span>
-              <span class="info-value">Lecturer in Economics</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Fields</span>
-              <span class="info-value">Development Economics &middot; Labor Markets &middot; African Economic History</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Methods</span>
-              <span class="info-value">Microeconometrics &middot; Panel Data &middot; Structural Estimation &middot; RCT Design</span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">Email</span>
-              <span class="info-value">
-                <a href="mailto:abrhamgs3@gmail.com">abrhamgs3@gmail.com</a>
-              </span>
-            </div>
-            <div class="info-item">
-              <span class="info-label">GitHub</span>
-              <span class="info-value">
-                <a href="https://github.com/abrhamgs3" target="_blank" rel="noopener noreferrer">github.com/abrhamgs3</a>
-              </span>
-            </div>
-          </div>
-        </aside>
+        <div class="hero-strip" aria-label="Quick contact">
+          <a href="mailto:abrhamgs3@gmail.com" class="hero-strip-link">abrhamgs3@gmail.com</a>
+          <span class="hero-strip-sep" aria-hidden="true">&middot;</span>
+          <a href="https://github.com/abrhamgs3" class="hero-strip-link" target="_blank" rel="noopener noreferrer">github.com/abrhamgs3</a>
+          <span class="hero-strip-sep" aria-hidden="true">&middot;</span>
+          <span class="hero-strip-text">Department of Economics, [University Name]</span>
+        </div>
 
+      </div>
+
+      <div class="hero-scroll-hint" aria-hidden="true">
+        <span class="scroll-line"></span>
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+
+    <!-- ════════════════════════════════════
          RESEARCH & PUBLICATIONS
-    ═══════════════════════════════════════════ -->
+    ════════════════════════════════════ -->
     <section id="research" class="section" aria-labelledby="research-heading">
       <div class="section-container">
 
         <header class="section-header">
           <span class="section-eyebrow">Scholarship</span>
           <h2 id="research-heading" class="section-title">Research &amp; Publications</h2>
-          <p class="section-subtitle">My research investigates the structural determinants of poverty, welfare, and long-run development in low-income economies, with particular emphasis on East and Sub-Saharan Africa.</p>
+          <p class="section-subtitle">My research spans two complementary programs: an environmental economics program examining how policy instruments and institutional structures govern natural resource use and environmental quality; and a behavioral-experimental program studying the cognitive and social mechanisms underlying economic decision-making in high-stakes environmental contexts.</p>
         </header>
 
-        <!-- ── Peer-Reviewed Articles ── -->
-        <div class="research-block">
-          <h3 class="research-block-title">
-            <span class="block-rule" aria-hidden="true"></span>
-            Peer-Reviewed Journal Articles
-          </h3>
-          <ol class="pub-list" reversed>
 
-            <li class="pub-item">
-              <div class="pub-meta">
-                <span class="pub-year">2024</span>
-                <span class="pub-badge pub-badge--published">Published</span>
-              </div>
-              <div class="pub-body">
-                <h4 class="pub-title">Agricultural Productivity Shocks and Rural Poverty Traps: Evidence from the Ethiopian Highlands</h4>
-                <p class="pub-authors">Meressa, Abrha M., <em>[Co-author Name]</em>, and <em>[Co-author Name]</em></p>
-                <p class="pub-venue"><em>Journal of Development Economics</em>, Vol. 168, Article 103268</p>
-                <div class="pub-links">
-                  <a href="#" class="pub-link" aria-label="Download PDF of Agricultural Productivity Shocks">PDF</a>
-                  <a href="#" class="pub-link" aria-label="View DOI for Agricultural Productivity Shocks">DOI</a>
-                  <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-1">Abstract</button>
-                </div>
-                <div class="abstract-panel" id="abs-1" hidden>
-                  <p>This paper examines the causal effect of rainfall-induced agricultural productivity shocks on long-run welfare outcomes in the Ethiopian highlands. Using a panel of 4,500 rural households over fifteen years and exploiting plausibly exogenous variation in seasonal rainfall, we identify a persistent poverty trap mechanism operating through livestock asset depletion. Households below a critical asset threshold are unable to smooth consumption in the face of negative shocks, leading to durable welfare losses that persist well beyond the shock period. We estimate that a one standard deviation negative productivity shock reduces the probability of escaping poverty by 12 percentage points for asset-poor households, compared to a statistically insignificant effect for wealthier households. Our findings highlight the need for targeted safety nets and complementary asset-building interventions in drought-prone rural environments.</p>
-                </div>
-              </div>
-            </li>
+        <!-- ── FIELD 1: Environmental Economics ── -->
+        <div class="research-field" id="field-env">
+          <div class="field-header">
+            <span class="field-dot field-dot--env" aria-hidden="true"></span>
+            <h3 class="field-title">Environmental Economics</h3>
+            <p class="field-desc">Resource management, pollution policy, environmental valuation, climate and development.</p>
+          </div>
 
-            <li class="pub-item">
-              <div class="pub-meta">
-                <span class="pub-year">2023</span>
-                <span class="pub-badge pub-badge--published">Published</span>
-              </div>
-              <div class="pub-body">
-                <h4 class="pub-title">Financial Inclusion and Consumption Smoothing Among Smallholder Farmers: Microeconomic Evidence from Eastern Africa</h4>
-                <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
-                <p class="pub-venue"><em>World Development</em>, Vol. 162, 106130</p>
-                <div class="pub-links">
-                  <a href="#" class="pub-link">PDF</a>
-                  <a href="#" class="pub-link">DOI</a>
-                  <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-2">Abstract</button>
-                </div>
-                <div class="abstract-panel" id="abs-2" hidden>
-                  <p>We study the impact of mobile money adoption on household consumption smoothing among smallholder farmers in Eastern Africa. Exploiting the staggered geographic rollout of mobile money services as a quasi-experimental source of variation, we find that access to mobile financial services increases per capita consumption by 8.4 percent and reduces the sensitivity of consumption to income shocks by approximately 30 percent. Effects are strongest for female-headed households and those in remote areas historically excluded from the formal financial system. The mechanism operates primarily through improved informal risk-sharing networks and reduced reliance on costly emergency credit. These results underscore the potential of fintech interventions to address structural credit market failures in low-income agricultural settings.</p>
-                </div>
-              </div>
-            </li>
+          <!-- Peer-Reviewed – Environmental -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Peer-Reviewed Journal Articles
+            </h4>
+            <ol class="pub-list" reversed>
 
-            <li class="pub-item">
-              <div class="pub-meta">
-                <span class="pub-year">2021</span>
-                <span class="pub-badge pub-badge--published">Published</span>
-              </div>
-              <div class="pub-body">
-                <h4 class="pub-title">Returns to Education and Labor Market Outcomes in Urban Ethiopia: A Gender-Disaggregated Analysis</h4>
-                <p class="pub-authors">Meressa, Abrha M.</p>
-                <p class="pub-venue"><em>Journal of African Economies</em>, Vol. 30, No. 4, pp. 312&ndash;341</p>
-                <div class="pub-links">
-                  <a href="#" class="pub-link">PDF</a>
-                  <a href="#" class="pub-link">DOI</a>
-                  <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-3">Abstract</button>
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2024</span>
+                  <span class="pub-badge pub-badge--pub">Published</span>
                 </div>
-                <div class="abstract-panel" id="abs-3" hidden>
-                  <p>This paper estimates private returns to schooling in urban Ethiopian labor markets using instrumental variable methods that address the endogeneity of educational attainment. Exploiting distance to the nearest secondary school as an instrument for years of completed schooling, I find that an additional year of education increases monthly earnings by 9.2 percent on average. Disaggregating by gender reveals substantially higher returns for women (12.8 percent) relative to men (6.9 percent), consistent with strong positive selection of women into formal wage employment in an environment where female labor force participation remains constrained. Returns are non-linear, with the largest earnings gains accruing at the transition to secondary and tertiary levels. The findings carry implications for education financing policy and for targeted interventions designed to close gender gaps in formal sector employment in rapidly urbanizing Sub-Saharan African economies.</p>
+                <div class="pub-body">
+                  <h5 class="pub-title">Environmental Taxation and Distributional Impacts: Evidence from a Simulated Carbon Fee in Ethiopia</h5>
+                  <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue"><em>Journal of Environmental Economics and Management</em>, Vol. 124, Article 102935</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-e1">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-e1" hidden>
+                    <p>We use a computable general equilibrium model calibrated to Ethiopian national accounts and household expenditure data to simulate the distributional consequences of a revenue-neutral carbon fee across income deciles. A flat per-unit fee on fossil fuel consumption is regressive in the first instance, reducing real incomes of the bottom decile by 3.1 percent relative to the top decile's 1.4 percent loss. However, targeted redistribution of revenue through a uniform lump-sum dividend reverses this pattern, generating net welfare gains for households below the median income. Our results highlight the importance of revenue recycling design for the political feasibility of carbon pricing in low-income economies, where the energy expenditure share of household budgets is highest among the poor.</p>
+                  </div>
                 </div>
-              </div>
-            </li>
+              </li>
 
-          </ol>
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2023</span>
+                  <span class="pub-badge pub-badge--pub">Published</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Willingness to Pay for Urban Air Quality Improvements: A Contingent Valuation Study in Addis Ababa</h5>
+                  <p class="pub-authors">Meressa, Abrha M.</p>
+                  <p class="pub-venue"><em>Environment and Development Economics</em>, Vol. 28, No. 3, pp. 241&ndash;268</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-e2">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-e2" hidden>
+                    <p>This paper uses a dichotomous-choice contingent valuation survey of 1,200 urban households to estimate willingness to pay (WTP) for a 30 percent reduction in particulate matter concentrations in Addis Ababa. Mean WTP is estimated at ETB 47 per month (approximately USD 1.55), representing 1.8 percent of mean household expenditure. WTP is positively associated with education, income, and self-reported respiratory symptoms. We find significant scope insensitivity at low bid levels, consistent with embedding effects documented in the broader CV literature. Aggregate annual WTP substantially exceeds the estimated annualized cost of proposed emission control measures for the transport sector, providing a positive cost-benefit case for intervention. We discuss implications for environmental policy valuation in data-scarce urban African contexts.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2022</span>
+                  <span class="pub-badge pub-badge--pub">Published</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Common Property Institutions, Deforestation, and Rural Household Welfare in the Ethiopian Highlands</h5>
+                  <p class="pub-authors">Meressa, Abrha M., <em>[Co-author Name]</em>, and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue"><em>Ecological Economics</em>, Vol. 197, Article 107457</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-e3">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-e3" hidden>
+                    <p>We examine how variation in the strength of community-level forest governance institutions affects deforestation rates and downstream welfare outcomes in the Ethiopian highlands. Combining satellite-derived forest cover data with a household panel and qualitative indices of institutional strength, we find that communities with well-functioning collective action institutions experience 38 percent lower annual deforestation rates than communities with weak or absent governance. Reduced deforestation translates into higher soil moisture retention, better rainfed crop yields, and improved income stability. We use a forest governance reform that differentially strengthened institutions across communities as a quasi-experimental source of variation to address the potential endogeneity of institutional quality to forest outcomes. Results underscore the importance of community-based governance for sustainable resource management in decentralized settings.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <!-- Working Papers – Environmental -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Working Papers
+            </h4>
+            <ol class="pub-list">
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-badge pub-badge--rev">Under Review</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Carbon Border Adjustment Mechanisms and Trade Flows: Distributional Implications for Sub-Saharan Africa</h5>
+                  <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue">Revise &amp; Resubmit, <em>Journal of Environmental Economics and Management</em></p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">SSRN</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-e4">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-e4" hidden>
+                    <p>We assess the trade and welfare consequences of the EU Carbon Border Adjustment Mechanism (CBAM) for Sub-Saharan African (SSA) exporting nations. Using a structural gravity model augmented with carbon intensity data at the product-country level, we estimate that CBAM implementation reduces SSA merchandise exports to the EU by 6.4 percent in the short run, with losses concentrated in energy-intensive sectors (iron and steel, aluminum, fertilizers, cement) that account for a disproportionate share of foreign exchange earnings for several low-income economies. We simulate counterfactual outcomes under alternative CBAM designs—including free allocation carve-outs for LDCs, differential adjustment periods, and domestic carbon pricing offsets—and find that design features materially affect the distributional burden across countries. Our findings contribute to the growing debate on the interface between climate policy and international trade law in contexts where developing nations have limited capacity to implement domestic carbon pricing.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-badge pub-badge--wp">Working Paper</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Community-Based Natural Resource Management and Cooperative Behavior: Field Evidence from Ethiopian Watersheds</h5>
+                  <p class="pub-authors">Meressa, Abrha M.</p>
+                  <p class="pub-venue">Working Paper</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-e5">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-e5" hidden>
+                    <p>I study the emergence and stability of cooperative behavior in community-based watershed management programs using a combination of field experimental measures and observational data on resource extraction. Linking public good contribution scores from incentivized lab-in-the-field games to observed irrigation water usage in a panel of 86 watershed communities, I find that communities with higher average cooperation scores—measured prior to formal program rollout—achieve significantly better collective management outcomes three years after program initiation. A heterogeneity analysis reveals that the cooperation-outcomes link is strongest in communities with high pre-existing social capital and low ethnic fractionalization. These findings suggest that behavioral screening of communities for cooperative norms may improve targeting efficiency in natural resource management interventions.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <!-- WIP – Environmental -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Work in Progress
+            </h4>
+            <ul class="wip-list">
+              <li class="wip-item">
+                <h5 class="wip-title">&ldquo;Ecosystem Services Valuation and Land Use Decisions Under Climate Uncertainty: Evidence from the Ethiopian Rift Valley&rdquo;</h5>
+                <p class="wip-note">With <em>[Co-author Name]</em>. Data collection ongoing.</p>
+              </li>
+              <li class="wip-item">
+                <h5 class="wip-title">&ldquo;Pollution, Productivity, and Worker Sorting: Evidence from Ethiopian Manufacturing Plants&rdquo;</h5>
+                <p class="wip-note">With <em>[Co-author Name]</em> and <em>[Co-author Name]</em>. Analysis phase.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /field-env -->
+
+
+        <!-- ── FIELD 2: Behavioral & Experimental ── -->
+        <div class="research-field research-field--behav" id="field-beh">
+          <div class="field-header field-header--behav">
+            <span class="field-dot field-dot--behav" aria-hidden="true"></span>
+            <h3 class="field-title">Behavioral &amp; Experimental Economics</h3>
+            <p class="field-desc">Lab and field experiments, risk and time preferences, choice architecture, pro-environmental behavior.</p>
+          </div>
+
+          <!-- Peer-Reviewed – Behavioral -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Peer-Reviewed Journal Articles
+            </h4>
+            <ol class="pub-list" reversed>
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2024</span>
+                  <span class="pub-badge pub-badge--pub">Published</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Green Nudges vs. Economic Incentives: A Randomized Field Experiment on Household Energy Conservation</h5>
+                  <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue"><em>Journal of Public Economics</em>, Vol. 232, Article 105087</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-b1">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-b1" hidden>
+                    <p>We report results from a large-scale randomized field experiment (N = 2,840 households) comparing the effectiveness of social norm nudges, monetary rebates, and a combined treatment for reducing household electricity consumption in urban Ethiopia. Treatment assignment was stratified by baseline consumption quintile and meter type. Social norm messages comparing household consumption to a neighborhood median reduced monthly consumption by 4.2 percent (SE = 0.9 percent). A modest financial rebate of equivalent cost reduced consumption by 5.8 percent. The combined treatment achieved 9.1 percent reductions—exceeding both individual treatments, suggesting complementarity between norm activation and price incentives. Effect sizes are stable over a 12-month follow-up window, with no evidence of rebound or treatment fatigue. We estimate a cost-effectiveness ratio of USD 0.018 per kWh conserved for the combined treatment, comparing favorably to supply-side energy efficiency programs in similar settings.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2023</span>
+                  <span class="pub-badge pub-badge--pub">Published</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Risk Preferences and the Demand for Weather Index Insurance: Experimental Evidence from Smallholder Farmers in Ethiopia</h5>
+                  <p class="pub-authors">Meressa, Abrha M., <em>[Co-author Name]</em>, and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue"><em>Journal of Economic Behavior &amp; Organization</em>, Vol. 208, pp. 94&ndash;121</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">DOI</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-b2">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-b2" hidden>
+                    <p>We elicit individual risk and ambiguity preferences from 680 smallholder farmers in drought-prone zones of Ethiopia using incentivized lottery tasks and assess whether these preferences predict take-up of a commercially offered rainfall index insurance product. Risk aversion, measured by the curvature of the utility function estimated via multiple price list tasks, is positively associated with insurance take-up—consistent with expected utility theory's prediction that more risk-averse agents value actuarially fair insurance more highly. Ambiguity aversion, however, is negatively correlated with take-up, reflecting farmer uncertainty about the reliability of index payouts relative to actual rainfall losses (basis risk). We also document significant present-bias among farmers who lapse on premium renewal despite prior expressed intentions to re-enroll. Our results identify behavioral barriers—ambiguity aversion and present bias—as important impediments to index insurance adoption beyond the standard price and income constraints emphasized in prior literature.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <!-- Working Papers – Behavioral -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Working Papers
+            </h4>
+            <ol class="pub-list">
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-badge pub-badge--rev">Under Review</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Choice Architecture for Sustainable Energy Adoption: Evidence from a Lab-in-the-Field Experiment</h5>
+                  <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
+                  <p class="pub-venue">Revise &amp; Resubmit, <em>American Economic Journal: Applied Economics</em></p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <a href="#" class="pub-link">SSRN</a>
+                    <a href="#" class="pub-link">Pre-registration</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-b3">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-b3" hidden>
+                    <p>We use a lab-in-the-field experiment conducted in rural market settings across four Ethiopian regions to test whether default option design and information framing affect smallholder farmer uptake of improved cookstoves. Participants (N = 1,440) were randomly assigned to one of four choice environment treatments varying the default product, price display format, and descriptive social norm information. An opt-out default for a subsidized clean cookstove—relative to an opt-in default—increases adoption by 24 percentage points. Combining the opt-out default with descriptive norm information about community adoption rates produces an additional 8 percentage point increase. Monetary equivalent price reductions of comparable magnitude are substantially more expensive per unit adoption, suggesting that choice architecture is a cost-effective complement to direct subsidies. We replicate the main default effect using a separate online sample from urban Addis Ababa, supporting external validity of the core result.</p>
+                  </div>
+                </div>
+              </li>
+
+              <li class="pub-item">
+                <div class="pub-meta">
+                  <span class="pub-year">2025</span>
+                  <span class="pub-badge pub-badge--wp">Working Paper</span>
+                </div>
+                <div class="pub-body">
+                  <h5 class="pub-title">Non-Linear Discount Rates and Long-Term Environmental Investment: Experimental Evidence on Hyperbolic Discounting</h5>
+                  <p class="pub-authors">Meressa, Abrha M.</p>
+                  <p class="pub-venue">Working Paper</p>
+                  <div class="pub-links">
+                    <a href="#" class="pub-link">PDF</a>
+                    <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-b4">Abstract</button>
+                  </div>
+                  <div class="abstract-panel" id="abs-b4" hidden>
+                    <p>I use a convex time budget task to elicit time preference parameters from a sample of rural land users in Ethiopia and assess whether estimated discount rates predict investment in long-horizon environmental improvements—specifically tree planting for soil rehabilitation and water table recharge. Present-biased individuals, identified by significantly higher short-run than long-run discount rates, invest 31 percent less in tree planting relative to time-consistent individuals with equivalent wealth. A commitment savings treatment that allows participants to pre-commit future income to environmental investment closes the gap by 18 percentage points. The results have direct implications for the design of Payments for Ecosystem Services (PES) programs, suggesting that front-loaded payment structures and commitment options can substantially increase investment in environmental public goods among present-biased agents.</p>
+                  </div>
+                </div>
+              </li>
+
+            </ol>
+          </div>
+
+          <!-- WIP – Behavioral -->
+          <div class="research-block">
+            <h4 class="research-block-label">
+              <span class="block-tick" aria-hidden="true"></span>
+              Work in Progress
+            </h4>
+            <ul class="wip-list">
+              <li class="wip-item">
+                <h5 class="wip-title">&ldquo;Carbon Label Salience and Consumer Choices: Online Experimental Evidence&rdquo;</h5>
+                <p class="wip-note">With <em>[Co-author Name]</em>. Data collection phase. Pre-registered: AEA RCT Registry.</p>
+              </li>
+              <li class="wip-item">
+                <h5 class="wip-title">&ldquo;Ingroup Bias and Cooperative Conservation: Experimental Evidence from Pastoralist Communities&rdquo;</h5>
+                <p class="wip-note">Analysis ongoing.</p>
+              </li>
+            </ul>
+          </div>
+
+        </div><!-- /field-beh -->
+
+      </div>
+    </section>
+
+
+    <!-- ════════════════════════════════════
+         LAB & EXPERIMENTS
+    ════════════════════════════════════ -->
+    <section id="lab" class="section section--lab" aria-labelledby="lab-heading">
+      <div class="section-container">
+
+        <header class="section-header">
+          <span class="section-eyebrow">Experimental Research</span>
+          <h2 id="lab-heading" class="section-title">Lab &amp; Field Experiments</h2>
+          <p class="section-subtitle">I conduct incentivized economic experiments in controlled laboratory settings, rural field environments, and online platforms. My experimental designs primarily target smallholder farmers, urban consumers, and resource-dependent communities in Ethiopia and Eastern Africa, with a focus on eliciting preference parameters and testing behavioral interventions under ecologically valid conditions.</p>
+        </header>
+
+        <!-- Software Row -->
+        <div class="lab-software-row" aria-label="Experimental software and tools">
+          <div class="software-card">
+            <span class="software-name">oTree</span>
+            <span class="software-desc">Online &amp; lab experiments; browser-based, open-source</span>
+          </div>
+          <div class="software-card">
+            <span class="software-name">z-Tree</span>
+            <span class="software-desc">Zurich toolbox for field and laboratory experiments</span>
+          </div>
+          <div class="software-card">
+            <span class="software-name">Qualtrics</span>
+            <span class="software-desc">Survey instruments &amp; online experiment modules</span>
+          </div>
+          <div class="software-card">
+            <span class="software-name">STATA &amp; R</span>
+            <span class="software-desc">Structural estimation, power analysis, randomization</span>
+          </div>
         </div>
 
-        <!-- ── Working Papers ── -->
-        <div class="research-block">
-          <h3 class="research-block-title">
-            <span class="block-rule" aria-hidden="true"></span>
-            Working Papers
-          </h3>
-          <ol class="pub-list">
+        <!-- Experiment Cards -->
+        <h3 class="exp-grid-title">Active &amp; Recent Experiments</h3>
+        <div class="exp-grid" role="list">
 
-            <li class="pub-item">
-              <div class="pub-meta">
-                <span class="pub-year">2025</span>
-                <span class="pub-badge pub-badge--review">Under Review</span>
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-head">
+              <span class="exp-status exp-status--active">
+                <span class="exp-status-dot" aria-hidden="true"></span>
+                Active
+              </span>
+              <div class="exp-type-row">
+                <span class="exp-type-tag">Lab</span>
+                <span class="exp-sw-tag">oTree</span>
               </div>
-              <div class="pub-body">
-                <h4 class="pub-title">Credit Market Frictions, Technology Adoption, and Agricultural Transformation in Sub-Saharan Africa</h4>
-                <p class="pub-authors">Meressa, Abrha M. and <em>[Co-author Name]</em></p>
-                <p class="pub-venue">Revise &amp; Resubmit, <em>American Journal of Agricultural Economics</em></p>
-                <div class="pub-links">
-                  <a href="#" class="pub-link">PDF</a>
-                  <a href="#" class="pub-link">SSRN</a>
-                  <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-4">Abstract</button>
-                </div>
-                <div class="abstract-panel" id="abs-4" hidden>
-                  <p>We examine how credit market imperfections constrain adoption of yield-enhancing agricultural technologies among smallholder farmers in Sub-Saharan Africa. Using a novel household panel dataset matched with satellite-derived soil quality measures and granular rainfall data, we document that credit-constrained households adopt improved seed varieties and chemical fertilizers at rates 28&ndash;35 percent lower than unconstrained households with otherwise equivalent land quality. We develop and estimate a dynamic discrete choice model of technology adoption that incorporates liquidity constraints, and identify structural parameters via a combination of observed adoption patterns and a small-scale randomized experiment that exogenously relaxes borrowing constraints for a subset of households. Model counterfactual simulations indicate that eliminating credit market frictions would increase fertilizer adoption by 40 percent and raise average maize yields by 18 percent, translating into substantial aggregate welfare gains.</p>
-                </div>
-              </div>
-            </li>
+            </div>
+            <h4 class="exp-title">Green Choice Under Scarcity</h4>
+            <p class="exp-desc">A multi-round public goods game with an embedded environmental account, testing how induced resource scarcity shifts contribution norms and the effectiveness of default contribution levels for conservation. Participants face real trade-offs between private consumption and contribution to a group resource pool with stochastic depletion.</p>
+            <div class="exp-footer">
+              <span class="exp-meta">N = 300 &nbsp;&middot;&nbsp; Addis Ababa &nbsp;&middot;&nbsp; 2024&ndash;25</span>
+              <span class="exp-field-tag">Environmental &middot; Behavioral</span>
+            </div>
+          </article>
 
-            <li class="pub-item">
-              <div class="pub-meta">
-                <span class="pub-year">2025</span>
-                <span class="pub-badge pub-badge--working">Working Paper</span>
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-head">
+              <span class="exp-status exp-status--done">
+                <span class="exp-status-dot" aria-hidden="true"></span>
+                Completed
+              </span>
+              <div class="exp-type-row">
+                <span class="exp-type-tag">Lab + Field</span>
+                <span class="exp-sw-tag">z-Tree</span>
               </div>
-              <div class="pub-body">
-                <h4 class="pub-title">Land Tenure Security, Investment Incentives, and Long-Run Productivity: Quasi-Experimental Evidence from Ethiopia's Land Registration Program</h4>
-                <p class="pub-authors">Meressa, Abrha M.</p>
-                <p class="pub-venue">Working Paper</p>
-                <div class="pub-links">
-                  <a href="#" class="pub-link">PDF</a>
-                  <button class="pub-link abstract-btn" aria-expanded="false" aria-controls="abs-5">Abstract</button>
-                </div>
-                <div class="abstract-panel" id="abs-5" hidden>
-                  <p>This paper exploits the phased rollout of Ethiopia's land registration and certification program to estimate the causal effect of formalized tenure security on smallholder farm investment and long-run agricultural productivity. Using a difference-in-differences design with a rich household panel spanning the pre- and post-reform period, I find that land certification increases investment in soil conservation measures by 22 percent and in tree planting by 34 percent. These investment responses translate into measured productivity gains of approximately 9 percent for grain crops over a five-year horizon. Heterogeneity analysis reveals that effects are concentrated among female-headed households and smaller landholders, the populations for whom informal tenure was historically most precarious. The results provide some of the cleanest evidence to date on the investment channel linking formal property rights to agricultural productivity in Sub-Saharan Africa.</p>
-                </div>
+            </div>
+            <h4 class="exp-title">Index Insurance Preferences Under Basis Risk</h4>
+            <p class="exp-desc">Lottery-based risk elicitation tasks (MPL design) conducted with smallholder farmers, followed by incentivized insurance purchase decisions with exogenously varied basis risk. Structural estimation of CRRA utility parameters and ambiguity attitudes using Klibanoff-Marinacci-Mukerji preferences.</p>
+            <div class="exp-footer">
+              <span class="exp-meta">N = 480 &nbsp;&middot;&nbsp; Tigray &amp; Amhara Regions &nbsp;&middot;&nbsp; 2022&ndash;23</span>
+              <span class="exp-field-tag">Behavioral &middot; Risk Preferences</span>
+            </div>
+          </article>
+
+          <article class="exp-card" role="listitem">
+            <div class="exp-card-head">
+              <span class="exp-status exp-status--active">
+                <span class="exp-status-dot" aria-hidden="true"></span>
+                Active
+              </span>
+              <div class="exp-type-row">
+                <span class="exp-type-tag">Online</span>
+                <span class="exp-sw-tag">oTree</span>
+                <span class="exp-sw-tag">Qualtrics</span>
               </div>
-            </li>
+            </div>
+            <h4 class="exp-title">Carbon Label Salience &amp; Consumer Choices</h4>
+            <p class="exp-desc">An online discrete choice experiment testing how the format, position, and color-coding of product-level carbon footprint labels affect purchasing decisions for food and energy goods. Randomizes label salience, social comparison frames, and monetary cost display across a nationally recruited urban panel. Pre-registered on AEA RCT Registry.</p>
+            <div class="exp-footer">
+              <span class="exp-meta">N = 600 (target) &nbsp;&middot;&nbsp; Urban Ethiopia &nbsp;&middot;&nbsp; 2025</span>
+              <span class="exp-field-tag">Environmental &middot; Behavioral</span>
+            </div>
+          </article>
 
-          </ol>
-        </div>
+          <article class="exp-card exp-card--design" role="listitem">
+            <div class="exp-card-head">
+              <span class="exp-status exp-status--design">
+                <span class="exp-status-dot" aria-hidden="true"></span>
+                In Design
+              </span>
+              <div class="exp-type-row">
+                <span class="exp-type-tag">Lab + Field</span>
+                <span class="exp-sw-tag">oTree</span>
+              </div>
+            </div>
+            <h4 class="exp-title">Intertemporal Trade-offs &amp; Environmental Investment</h4>
+            <p class="exp-desc">Convex time budget tasks paired with real tree-planting investment decisions to elicit quasi-hyperbolic discount parameters and assess whether commitment devices improve long-horizon conservation investment. Designed to complement the working paper on non-linear discount rates with controlled experimental variation in commitment options.</p>
+            <div class="exp-footer">
+              <span class="exp-meta">N = 360 (planned) &nbsp;&middot;&nbsp; Oromia Region &nbsp;&middot;&nbsp; 2025&ndash;26</span>
+              <span class="exp-field-tag">Behavioral &middot; Environmental</span>
+            </div>
+          </article>
 
-        <!-- ── Work in Progress ── -->
-        <div class="research-block">
-          <h3 class="research-block-title">
-            <span class="block-rule" aria-hidden="true"></span>
-            Work in Progress
-          </h3>
-          <ul class="wip-list">
-            <li class="wip-item">
-              <h4 class="wip-title">&ldquo;Structural Transformation, Occupational Mobility, and Poverty Dynamics in Rapidly Urbanizing Economies&rdquo;</h4>
-              <p class="wip-note">With <em>[Co-author Name]</em>. Data collection phase.</p>
-            </li>
-            <li class="wip-item">
-              <h4 class="wip-title">&ldquo;The Long Shadow of Colonial Land Policies: Persistence, Reversal, and Contemporary Economic Inequality in Ethiopia&rdquo;</h4>
-              <p class="wip-note">Data analysis ongoing.</p>
-            </li>
-            <li class="wip-item">
-              <h4 class="wip-title">&ldquo;Climate Variability, Household Adaptation Strategies, and Intergenerational Welfare in the Horn of Africa&rdquo;</h4>
-              <p class="wip-note">With <em>[Co-author Name]</em> and <em>[Co-author Name]</em>. Preliminary results.</p>
-            </li>
-          </ul>
+        </div><!-- /exp-grid -->
+
+        <!-- Research Infrastructure -->
+        <div class="lab-infra">
+          <h3 class="infra-heading">Research Infrastructure &amp; Methods</h3>
+          <div class="infra-grid">
+            <div class="infra-block">
+              <h4 class="infra-label">Experimental Platforms</h4>
+              <p class="infra-body">Experiments are programmed in <strong>oTree</strong> (Python-based, browser-deployable) for online and lab sessions, and <strong>z-Tree</strong> for sessions requiring lower internet dependency in rural field settings. All software is run on locally managed server infrastructure where connectivity is constrained.</p>
+            </div>
+            <div class="infra-block">
+              <h4 class="infra-label">Subject Pools</h4>
+              <p class="infra-body">Lab sessions recruit from university student and general adult populations in Addis Ababa. Field sessions recruit from smallholder farmer cooperatives and kebele registers in Tigray, Amhara, and Oromia regions. Recruitment follows written informed consent protocols approved by [IRB/Ethics Committee Name].</p>
+            </div>
+            <div class="infra-block">
+              <h4 class="infra-label">Pre-registration &amp; Open Science</h4>
+              <p class="infra-body">All prospective experiments are pre-registered on the <strong>AEA RCT Registry</strong> or <strong>OSF</strong> prior to data collection. Analysis code, anonymized experimental data, and oTree/z-Tree program files are shared on <a href="https://github.com/abrhamgs3" target="_blank" rel="noopener noreferrer">GitHub</a> upon publication.</p>
+            </div>
+            <div class="infra-block">
+              <h4 class="infra-label">Estimation &amp; Analysis</h4>
+              <p class="infra-body">Structural estimation uses <strong>STATA</strong> (maximum likelihood, GMM) and <strong>R</strong> (mixed logit, Bayesian estimation). Power calculations for experimental designs use the <strong>pwr</strong> package (R) and <strong>G*Power</strong>. Randomization is implemented using <strong>randomizr</strong> (R).</p>
+            </div>
+          </div>
         </div>
 
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+
+    <!-- ════════════════════════════════════
          TEACHING & EXPERIENCE
-    ═══════════════════════════════════════════ -->
+    ════════════════════════════════════ -->
     <section id="teaching" class="section section--alt" aria-labelledby="teaching-heading">
       <div class="section-container">
 
         <header class="section-header">
           <span class="section-eyebrow">Education &amp; Service</span>
           <h2 id="teaching-heading" class="section-title">Teaching &amp; Experience</h2>
-          <p class="section-subtitle">Committed to rigorous instruction in economic theory and applied empirical methods, connecting quantitative techniques to real-world development policy questions.</p>
+          <p class="section-subtitle">I teach across microeconomic theory, environmental economics, and applied econometrics at both undergraduate and graduate levels, with an emphasis on active learning and integrating primary research into the classroom.</p>
         </header>
 
         <div class="teaching-grid">
@@ -295,7 +574,8 @@
               <li class="edu-item">
                 <span class="edu-degree">PhD in Economics</span>
                 <span class="edu-inst">[PhD-Granting Institution] &mdash; [Year]</span>
-                <span class="edu-note">Dissertation: <em>&ldquo;Essays on Agricultural Markets, Credit Constraints, and Household Welfare in Sub-Saharan Africa&rdquo;</em></span>
+                <span class="edu-note">Fields: Environmental Economics, Behavioral &amp; Experimental Economics</span>
+                <span class="edu-note">Dissertation: <em>&ldquo;Essays on Environmental Policy, Preferences, and Behavioral Interventions in Developing Economies&rdquo;</em></span>
               </li>
               <li class="edu-item">
                 <span class="edu-degree">MSc in Economics</span>
@@ -311,26 +591,26 @@
           <!-- Courses Taught -->
           <div class="teach-block teach-block--wide">
             <h3 class="teach-block-title">Courses Taught</h3>
-            <div class="courses-columns">
+            <div class="courses-grid">
 
               <div class="course-level">
                 <h4 class="course-level-label">Undergraduate</h4>
                 <ul class="course-list">
                   <li class="course-item">
                     <span class="course-name">Principles of Microeconomics</span>
-                    <span class="course-desc">Consumer theory, firm behavior, and market structures; 200-level introductory survey.</span>
+                    <span class="course-desc">Consumer theory, producer theory, market equilibrium, welfare analysis, and introductory game theory.</span>
                   </li>
                   <li class="course-item">
-                    <span class="course-name">Principles of Macroeconomics</span>
-                    <span class="course-desc">National income accounting, monetary and fiscal policy, open-economy macroeconomics.</span>
+                    <span class="course-name">Environmental &amp; Resource Economics</span>
+                    <span class="course-desc">Market failures, externalities, pollution control instruments, resource depletion, environmental valuation methods.</span>
+                  </li>
+                  <li class="course-item">
+                    <span class="course-name">Behavioral Economics</span>
+                    <span class="course-desc">Departures from standard rationality: bounded rationality, prospect theory, present bias, social preferences, and nudge design.</span>
                   </li>
                   <li class="course-item">
                     <span class="course-name">Introduction to Econometrics</span>
-                    <span class="course-desc">OLS, hypothesis testing, heteroskedasticity, serial correlation, and panel data methods using Stata/R.</span>
-                  </li>
-                  <li class="course-item">
-                    <span class="course-name">Economics of Development</span>
-                    <span class="course-desc">Theories of economic growth, structural transformation, poverty traps, and evidence-based policy.</span>
+                    <span class="course-desc">OLS, inference, heteroskedasticity, serial correlation, instrumental variables, and introductory panel data methods using STATA.</span>
                   </li>
                 </ul>
               </div>
@@ -339,16 +619,16 @@
                 <h4 class="course-level-label">Graduate</h4>
                 <ul class="course-list">
                   <li class="course-item">
-                    <span class="course-name">Advanced Econometrics I</span>
-                    <span class="course-desc">Asymptotic theory, GMM, instrumental variables, and maximum likelihood estimation.</span>
+                    <span class="course-name">Advanced Environmental Economics</span>
+                    <span class="course-desc">Frontier topics: dynamic resource extraction, non-market valuation, climate economics, and mechanism design for environmental policy.</span>
                   </li>
                   <li class="course-item">
                     <span class="course-name">Applied Microeconometrics</span>
-                    <span class="course-desc">Causal inference: DID, RDD, IV, synthetic control, and program evaluation methods.</span>
+                    <span class="course-desc">Causal inference: DID, RDD, IV, synthetic control, and program evaluation. Power analysis and pre-analysis plan design.</span>
                   </li>
                   <li class="course-item">
-                    <span class="course-name">Development Economics (Graduate)</span>
-                    <span class="course-desc">Frontier research on poverty, markets, institutions, and household behavior in LMICs.</span>
+                    <span class="course-name">Experimental Economics (Graduate Seminar)</span>
+                    <span class="course-desc">Design and analysis of economic experiments: preference elicitation, mechanism testing, field experiments, and external validity.</span>
                   </li>
                 </ul>
               </div>
@@ -359,27 +639,27 @@
           <!-- Professional Service -->
           <div class="teach-block teach-block--wide">
             <h3 class="teach-block-title">Professional Service</h3>
-            <div class="service-grid">
+            <div class="service-row">
 
-              <div class="service-item">
-                <h4 class="service-label">Referee</h4>
-                <p class="service-body">Journal of Development Economics &middot; World Development &middot; Journal of African Economies &middot; Oxford Bulletin of Economics and Statistics &middot; Economic Development and Cultural Change &middot; Review of Development Economics</p>
+              <div class="service-cell">
+                <h4 class="service-cell-label">Referee</h4>
+                <p class="service-cell-body">Journal of Environmental Economics and Management &middot; Journal of Public Economics &middot; Ecological Economics &middot; Journal of Economic Behavior &amp; Organization &middot; Environment and Development Economics &middot; World Development</p>
               </div>
 
-              <div class="service-item">
-                <h4 class="service-label">Conference Presentations</h4>
+              <div class="service-cell">
+                <h4 class="service-cell-label">Conference Presentations</h4>
                 <ul class="conf-list">
-                  <li>African Economic Research Consortium (AERC) Annual Conference, 2024</li>
-                  <li>European Economic Association (EEA) Annual Congress, 2023</li>
-                  <li>Nordic Conference in Development Economics, 2023</li>
+                  <li>European Association of Environmental and Resource Economists (EAERE), 2024</li>
+                  <li>Economic Science Association (ESA) World Meeting, 2024</li>
+                  <li>African Economic Research Consortium (AERC) Annual Conference, 2023</li>
+                  <li>Association of Environmental and Resource Economists (AERE) Annual Summer Conference, 2023</li>
                   <li>Centre for the Study of African Economies (CSAE) Conference, 2022</li>
-                  <li>Midwest International Economic Development Conference, 2021</li>
                 </ul>
               </div>
 
-              <div class="service-item">
-                <h4 class="service-label">Memberships</h4>
-                <p class="service-body">American Economic Association &middot; African Economic Research Consortium &middot; European Economic Association &middot; Ethiopian Economics Association</p>
+              <div class="service-cell">
+                <h4 class="service-cell-label">Memberships &amp; Affiliations</h4>
+                <p class="service-cell-body">American Economic Association &middot; European Association of Environmental and Resource Economists &middot; Economic Science Association &middot; African Economic Research Consortium &middot; Ethiopian Economics Association</p>
               </div>
 
             </div>
@@ -389,30 +669,31 @@
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+
+    <!-- ════════════════════════════════════
          CURRICULUM VITAE
-    ═══════════════════════════════════════════ -->
+    ════════════════════════════════════ -->
     <section id="cv" class="section section--cv" aria-labelledby="cv-heading">
       <div class="section-container">
 
-        <header class="section-header section-header--centered">
+        <header class="section-header section-header--center">
           <span class="section-eyebrow">Curriculum Vitae</span>
           <h2 id="cv-heading" class="section-title">Academic CV</h2>
-          <p class="section-subtitle section-subtitle--centered">A complete curriculum vitae including full publication history, grant funding, conference presentations, and teaching evaluations is available for download.</p>
+          <p class="section-subtitle section-subtitle--center">A complete curriculum vitae—including full publication list, grants and fellowships, conference presentations, and teaching evaluations—is available for download.</p>
         </header>
 
         <div class="cv-stats">
           <div class="cv-stat">
-            <span class="cv-stat-n">3+</span>
+            <span class="cv-stat-n">5+</span>
             <span class="cv-stat-label">Peer-Reviewed Publications</span>
           </div>
           <div class="cv-stat">
-            <span class="cv-stat-n">2</span>
+            <span class="cv-stat-n">4</span>
             <span class="cv-stat-label">Working Papers</span>
           </div>
           <div class="cv-stat">
-            <span class="cv-stat-n">7+</span>
-            <span class="cv-stat-label">Courses Taught</span>
+            <span class="cv-stat-n">4</span>
+            <span class="cv-stat-label">Active / Recent Experiments</span>
           </div>
           <div class="cv-stat">
             <span class="cv-stat-n">5+</span>
@@ -420,31 +701,33 @@
           </div>
         </div>
 
-        <div class="cv-download">
-          <a href="cv.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Download full CV as PDF">
-            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+        <div class="cv-download-wrap">
+          <a href="cv.pdf" class="btn btn-primary btn-lg" target="_blank" rel="noopener noreferrer" aria-label="Download full academic CV as PDF">
+            <svg class="btn-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none"
+                 stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
               <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
               <polyline points="7 10 12 15 17 10"/>
               <line x1="12" y1="15" x2="12" y2="3"/>
             </svg>
             Download Full CV (PDF)
           </a>
-          <p class="cv-updated">Last updated: June 2025</p>
+          <p class="cv-note">Last updated: June 2025</p>
         </div>
 
       </div>
     </section>
 
-    <!-- ═══════════════════════════════════════════
+
+    <!-- ════════════════════════════════════
          CONTACT
-    ═══════════════════════════════════════════ -->
+    ════════════════════════════════════ -->
     <section id="contact" class="section section--dark" aria-labelledby="contact-heading">
       <div class="section-container">
 
         <header class="section-header">
           <span class="section-eyebrow section-eyebrow--light">Get in Touch</span>
           <h2 id="contact-heading" class="section-title section-title--light">Contact</h2>
-          <p class="section-subtitle section-subtitle--light">I welcome inquiries regarding research collaboration, seminar invitations, consulting engagements, and graduate student supervision.</p>
+          <p class="section-subtitle section-subtitle--light">I welcome inquiries about research collaboration, seminar invitations, experimental partner organizations, and graduate student supervision in environmental and behavioral economics.</p>
         </header>
 
         <div class="contact-grid">
@@ -462,14 +745,14 @@
 
           <div class="contact-block">
             <h3 class="contact-block-title">Direct Contact</h3>
-            <ul class="contact-details">
-              <li class="contact-detail">
-                <span class="contact-detail-label">Email</span>
-                <a href="mailto:abrhamgs3@gmail.com" class="contact-detail-value">abrhamgs3@gmail.com</a>
+            <ul class="contact-items">
+              <li class="contact-item">
+                <span class="contact-item-label">Email</span>
+                <a href="mailto:abrhamgs3@gmail.com" class="contact-item-val">abrhamgs3@gmail.com</a>
               </li>
-              <li class="contact-detail">
-                <span class="contact-detail-label">Institutional</span>
-                <a href="mailto:institutional@university.edu" class="contact-detail-value">[institutional@university.edu]</a>
+              <li class="contact-item">
+                <span class="contact-item-label">Institutional</span>
+                <a href="mailto:institutional@university.edu" class="contact-item-val">[institutional@university.edu]</a>
               </li>
             </ul>
           </div>
@@ -479,29 +762,37 @@
             <ul class="social-list">
 
               <li>
-                <a href="https://github.com/abrhamgs3" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub profile">
-                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/></svg>
-                  GitHub
+                <a href="https://github.com/abrhamgs3" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="GitHub — abrhamgs3">
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.374 0 0 5.373 0 12c0 5.302 3.438 9.8 8.207 11.387.599.111.793-.261.793-.577v-2.234c-3.338.726-4.033-1.416-4.033-1.416-.546-1.387-1.333-1.756-1.333-1.756-1.089-.745.083-.729.083-.729 1.205.084 1.839 1.237 1.839 1.237 1.07 1.834 2.807 1.304 3.492.997.107-.775.418-1.305.762-1.604-2.665-.305-5.467-1.334-5.467-5.931 0-1.311.469-2.381 1.236-3.221-.124-.303-.535-1.524.117-3.176 0 0 1.008-.322 3.301 1.23A11.509 11.509 0 0 1 12 5.803c1.02.005 2.047.138 3.006.404 2.291-1.552 3.297-1.23 3.297-1.23.653 1.653.242 2.874.118 3.176.77.84 1.235 1.911 1.235 3.221 0 4.609-2.807 5.624-5.479 5.921.43.372.823 1.102.823 2.222v3.293c0 .319.192.694.801.576C20.566 21.797 24 17.3 24 12c0-6.627-5.373-12-12-12z"/>
+                  </svg>
+                  GitHub &mdash; abrhamgs3
                 </a>
               </li>
 
               <li>
                 <a href="https://www.linkedin.com/in/[your-linkedin-handle]" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="LinkedIn profile">
-                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/></svg>
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433a2.062 2.062 0 0 1-2.063-2.065 2.064 2.064 0 1 1 2.063 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z"/>
+                  </svg>
                   LinkedIn
                 </a>
               </li>
 
               <li>
                 <a href="https://orcid.org/0000-0000-0000-0000" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="ORCID profile">
-                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.284-3.722-3.872-3.722h-2.297z"/></svg>
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M12 0C5.372 0 0 5.372 0 12s5.372 12 12 12 12-5.372 12-12S18.628 0 12 0zM7.369 4.378c.525 0 .947.431.947.947s-.422.947-.947.947a.95.95 0 0 1-.947-.947c0-.525.422-.947.947-.947zm-.722 3.038h1.444v10.041H6.647V7.416zm3.562 0h3.9c3.712 0 5.344 2.653 5.344 5.025 0 2.578-2.016 5.016-5.325 5.016h-3.919V7.416zm1.444 1.303v7.444h2.297c3.272 0 3.872-2.484 3.872-3.722 0-2.016-1.284-3.722-3.872-3.722h-2.297z"/>
+                  </svg>
                   ORCID
                 </a>
               </li>
 
               <li>
                 <a href="https://scholar.google.com/citations?user=[google-scholar-id]" class="social-link" target="_blank" rel="noopener noreferrer" aria-label="Google Scholar profile">
-                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/></svg>
+                  <svg class="social-icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true">
+                    <path d="M5.242 13.769L0 9.5 12 0l12 9.5-5.242 4.269C17.548 11.249 14.978 9.5 12 9.5c-2.977 0-5.548 1.748-6.758 4.269zM12 10a7 7 0 1 0 0 14 7 7 0 0 0 0-14z"/>
+                  </svg>
                   Google Scholar
                 </a>
               </li>
@@ -515,69 +806,71 @@
 
   </main>
 
-  <!-- ═══════════════════════════════════════════
+
+  <!-- ════════════════════════════════════
        FOOTER
-  ═══════════════════════════════════════════ -->
+  ════════════════════════════════════ -->
   <footer class="site-footer">
     <div class="footer-inner">
       <p class="footer-name">Dr. Abrha Megos Meressa</p>
       <p class="footer-copy">&copy; <span id="yr"></span> Abrha Megos Meressa. All rights reserved.</p>
       <p class="footer-src">
         Built with semantic HTML &amp; CSS &mdash;
-        <a href="https://github.com/abrhamgs3/abrhamgs3.github.io" target="_blank" rel="noopener noreferrer">View source</a>
+        <a href="https://github.com/abrhamgs3/abrhamgs3.github.io" target="_blank" rel="noopener noreferrer">View source on GitHub</a>
       </p>
     </div>
   </footer>
 
-  <!-- ═══════════════════════════════════════════
+
+  <!-- ════════════════════════════════════
        JAVASCRIPT
-  ═══════════════════════════════════════════ -->
+  ════════════════════════════════════ -->
   <script>
     // Footer year
     document.getElementById('yr').textContent = new Date().getFullYear();
 
-    // ── Abstract panels ──────────────────────────
+    // ── Abstract toggle ──────────────────────
     document.querySelectorAll('.abstract-btn').forEach(function(btn) {
       btn.addEventListener('click', function() {
-        var panel = document.getElementById(this.getAttribute('aria-controls'));
-        var open  = this.getAttribute('aria-expanded') === 'true';
-        this.setAttribute('aria-expanded', String(!open));
-        this.textContent = open ? 'Abstract' : 'Close';
-        panel.hidden = open;
+        var panel  = document.getElementById(this.getAttribute('aria-controls'));
+        var isOpen = this.getAttribute('aria-expanded') === 'true';
+        this.setAttribute('aria-expanded', String(!isOpen));
+        this.textContent = isOpen ? 'Abstract' : 'Close';
+        panel.hidden = isOpen;
       });
     });
 
-    // ── Sticky nav shadow on scroll ───────────────
+    // ── Navbar shadow on scroll ───────────────
     var nav = document.getElementById('navbar');
     window.addEventListener('scroll', function() {
       nav.classList.toggle('navbar--scrolled', window.scrollY > 48);
     }, { passive: true });
 
-    // ── Mobile hamburger ──────────────────────────
+    // ── Mobile hamburger ──────────────────────
     var toggle = document.getElementById('navToggle');
-    var links  = document.getElementById('navLinks');
+    var menu   = document.getElementById('navLinks');
 
     toggle.addEventListener('click', function() {
       var expanded = this.getAttribute('aria-expanded') === 'true';
       this.setAttribute('aria-expanded', String(!expanded));
-      links.classList.toggle('nav-links--open');
+      menu.classList.toggle('nav-links--open');
     });
 
     document.querySelectorAll('.nav-link').forEach(function(a) {
       a.addEventListener('click', function() {
-        links.classList.remove('nav-links--open');
+        menu.classList.remove('nav-links--open');
         toggle.setAttribute('aria-expanded', 'false');
       });
     });
 
-    // ── Active nav link via IntersectionObserver ──
+    // ── Active link tracking (IntersectionObserver) ──
     var sections = document.querySelectorAll('section[id]');
     var navLinks = document.querySelectorAll('.nav-link');
 
     var io = new IntersectionObserver(function(entries) {
-      entries.forEach(function(e) {
-        if (e.isIntersecting) {
-          var id = e.target.getAttribute('id');
+      entries.forEach(function(entry) {
+        if (entry.isIntersecting) {
+          var id = entry.target.getAttribute('id');
           navLinks.forEach(function(a) {
             a.classList.toggle('nav-link--active', a.getAttribute('href') === '#' + id);
           });
