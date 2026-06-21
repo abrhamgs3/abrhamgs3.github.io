@@ -10,6 +10,26 @@
   <meta property="og:type" content="website">
   <meta property="og:url" content="https://abrhamgs3.github.io">
   <title>Dr. Abrha Megos Meressa | Environmental &amp; Behavioral Economist</title>
+
+  <!-- Tells the browser which color schemes the page supports;
+       native UI (scrollbars, inputs) adapts accordingly. -->
+  <meta name="color-scheme" content="light dark">
+
+  <!-- Anti-FOUC: read localStorage and stamp data-theme BEFORE the
+       stylesheet parses so the first paint is already in the right
+       theme.  Must run before <link rel="stylesheet">. -->
+  <script>
+    (function () {
+      try {
+        var saved      = localStorage.getItem('portfolio-theme');
+        var preferDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
+        if (saved === 'dark' || (!saved && preferDark)) {
+          document.documentElement.setAttribute('data-theme', 'dark');
+        }
+      } catch (e) { /* localStorage blocked in private browsing — silent fail */ }
+    }());
+  </script>
+
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -32,6 +52,15 @@
         <li><a href="#teaching" class="nav-link">Teaching</a></li>
         <li><a href="#contact"  class="nav-link">Contact</a></li>
       </ul>
+
+      <!-- Theme switcher — text-only, top-right of nav -->
+      <button class="theme-toggle"
+              id="themeToggle"
+              aria-label="Switch to dark theme"
+              aria-pressed="false">
+        Toggle Theme
+      </button>
+
     </div>
   </nav>
 
@@ -47,26 +76,41 @@
       <div class="hero">
         <div class="hero-wrap">
 
-          <!-- institution kicker strip -->
-          <div class="hero-kicker" aria-label="Institutional affiliations">
-            <span class="kicker-rule" aria-hidden="true"></span>
-            <span class="kicker-text">
-              Mekelle University &nbsp;&middot;&nbsp; Norwegian University of Life Sciences (NMBU)
-            </span>
-            <span class="kicker-rule" aria-hidden="true"></span>
-          </div>
+          <!-- ── MASTHEAD: asymmetric Flexbox ──
+               Name occupies the left column.
+               Institution stack is right-aligned,
+               baseline-anchored to the bottom of the name.
+          ─────────────────────────────────────── -->
+          <div class="hero-masthead">
 
-          <!-- name -->
-          <h1 class="hero-name">
-            <span class="hero-dr" aria-hidden="true">Dr.</span>
-            Abrha Megos Meressa
-          </h1>
+            <!-- Left: degree prefix + name -->
+            <div class="hero-name-block">
+              <span class="hero-dr">Dr.</span>
+              <h1 class="hero-name">Abrha Megos<br>Meressa</h1>
+            </div>
 
-          <!-- green rule -->
+            <!-- Right: dual-institution block, right-aligned -->
+            <aside class="hero-affils" aria-label="Institutional affiliations">
+              <div class="hero-affil">
+                <span class="hero-affil-name">Mekelle University</span>
+                <span class="hero-affil-dept">Dept. of Agricultural Economics</span>
+                <span class="hero-affil-loc">Mekelle, Ethiopia</span>
+              </div>
+              <div class="hero-affil-sep" aria-hidden="true"></div>
+              <div class="hero-affil">
+                <span class="hero-affil-name">NMBU</span>
+                <span class="hero-affil-dept">School of Economics &amp; Business</span>
+                <span class="hero-affil-loc">Ås, Norway</span>
+              </div>
+            </aside>
+
+          </div><!-- /hero-masthead -->
+
+          <!-- Pine accent rule — full-width under the masthead -->
           <div class="hero-pine-rule" aria-hidden="true"></div>
 
-          <!-- titles -->
-          <p class="hero-title">PhD in Economics &nbsp;&nbsp;&bull;&nbsp;&nbsp; Research Fellow</p>
+          <!-- Titles -->
+          <p class="hero-title">PhD in Economics &nbsp;&bull;&nbsp; Research Fellow</p>
           <p class="hero-sub">Environmental, Behavioral &amp; Experimental Economics</p>
 
           <!-- research pillars as horizontal tags -->
@@ -140,7 +184,7 @@
                   <div class="affil-name-block">
                     <strong class="affil-univ">Mekelle University</strong>
                     <span class="affil-dept">College of Business &amp; Economics</span>
-                    <span class="affil-dept">Department of Agricultural Economics</span>
+                    <span class="affil-dept">Department of Economics</span>
                   </div>
                 </div>
                 <p class="affil-location">
@@ -186,6 +230,59 @@
 
 
     <!-- ══════════════════════════════════════════
+         RECENT UPDATES TIMELINE
+         Placed between About and Research so it reads
+         as a live status strip before the full publication list.
+    ══════════════════════════════════════════ -->
+    <section class="updates-section" aria-labelledby="updates-heading">
+      <div class="wrap">
+        <div class="updates-layout">
+
+          <!-- Left column: sticky heading block -->
+          <div class="updates-head">
+            <span class="eyebrow">Field Research</span>
+            <h2 id="updates-heading" class="updates-title">Recent<br>Updates</h2>
+            <p class="updates-desc">Active milestones, data collection progress, and manuscript submissions.</p>
+          </div>
+
+          <!-- Right column: vertical timeline -->
+          <ol class="tl-list" aria-label="Research update timeline, most recent first">
+
+            <li class="tl-entry">
+              <div class="tl-marker" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-date" datetime="2026-06">June 2026</time>
+                <p class="tl-headline">Field experiment data collection completed</p>
+                <p class="tl-note">Household survey round finalised in Ofla Woreda, Northern Ethiopia. All 620 interviews transcribed and quality-checked; data cleaning phase initiated in preparation for logit regression analysis.</p>
+              </div>
+            </li>
+
+            <li class="tl-entry">
+              <div class="tl-marker" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-date" datetime="2026-03">March 2026</time>
+                <p class="tl-headline">Working paper on biogas adoption finalised</p>
+                <p class="tl-note">&ldquo;Understanding Biogas Adoption for Sustainable Energy Transition among Farm Households in Northern Ethiopia&rdquo; submitted to <em>Discover Sustainability</em> (Springer Nature). Revisions currently pending.</p>
+              </div>
+            </li>
+
+            <li class="tl-entry">
+              <div class="tl-marker" aria-hidden="true"></div>
+              <div class="tl-content">
+                <time class="tl-date" datetime="2026-01">January 2026</time>
+                <p class="tl-headline">Panel data analysis initiated</p>
+                <p class="tl-note">Longitudinal dataset construction commenced for the agricultural commercialization and dairy market participation study. Heckman two-stage model estimation and robustness checks scheduled for Q2 2026.</p>
+              </div>
+            </li>
+
+          </ol>
+
+        </div>
+      </div>
+    </section><!-- /updates -->
+
+
+    <!-- ══════════════════════════════════════════
          RESEARCH & PUBLICATIONS  (#research)
     ══════════════════════════════════════════ -->
     <section id="research" class="section section--chalk" aria-labelledby="research-heading">
@@ -198,10 +295,41 @@
         </header>
 
 
+        <!-- ── Research filter tab bar ──────────────────────────────
+             data-filter="all"  → all three themes visible
+             data-filter="env"  → only data-theme="env" visible
+             data-filter="beh"  → only data-theme="beh" visible
+             data-theme="mkt"   → visible under "all" only
+        ──────────────────────────────────────────────────────────── -->
+        <div class="res-tabbar" role="tablist" aria-label="Filter publications by research area">
+          <button class="res-tab res-tab--active"
+                  role="tab"
+                  aria-selected="true"
+                  data-filter="all">
+            All Research
+            <span class="res-tab-n" aria-label="7 papers total">7</span>
+          </button>
+          <button class="res-tab"
+                  role="tab"
+                  aria-selected="false"
+                  data-filter="env">
+            Environmental Economics
+            <span class="res-tab-n" aria-label="3 papers">3</span>
+          </button>
+          <button class="res-tab"
+                  role="tab"
+                  aria-selected="false"
+                  data-filter="beh">
+            Behavioral &amp; Experimental
+            <span class="res-tab-n" aria-label="2 papers">2</span>
+          </button>
+        </div><!-- /res-tabbar -->
+
+
         <!-- ──────────────────────────────────────
              THEME 01 · Climate Variability & Environmental Economics
         ────────────────────────────────────── -->
-        <div class="research-theme" id="theme-01">
+        <div class="research-theme" id="theme-01" data-theme="env">
           <div class="theme-head theme-head--01">
             <div class="theme-num-badge" aria-label="Research Theme 1">01</div>
             <div class="theme-info">
@@ -302,7 +430,7 @@
         <!-- ──────────────────────────────────────
              THEME 02 · Behavioral & Experimental Economics
         ────────────────────────────────────── -->
-        <div class="research-theme" id="theme-02">
+        <div class="research-theme" id="theme-02" data-theme="beh">
           <div class="theme-head theme-head--02">
             <div class="theme-num-badge theme-num-badge--02" aria-label="Research Theme 2">02</div>
             <div class="theme-info">
@@ -375,7 +503,7 @@
         <!-- ──────────────────────────────────────
              THEME 03 · Market Participation, Commercialization & Welfare
         ────────────────────────────────────── -->
-        <div class="research-theme" id="theme-03">
+        <div class="research-theme" id="theme-03" data-theme="mkt">
           <div class="theme-head theme-head--03">
             <div class="theme-num-badge theme-num-badge--03" aria-label="Research Theme 3">03</div>
             <div class="theme-info">
@@ -755,6 +883,98 @@
           }, { rootMargin: '-38% 0px -57% 0px' }).observe(s);
         })
       : null;
+
+    // ── Theme toggle ─────────────────────────────────────────
+    // Self-contained IIFE: no global variables leak out.
+    // The anti-FOUC script in <head> already applied the saved
+    // theme; this block only wires the button interaction.
+    (function () {
+      var KEY    = 'portfolio-theme';
+      var DARK   = 'dark';
+      var html   = document.documentElement;
+      var btn    = document.getElementById('themeToggle');
+
+      if (!btn) return;
+
+      // Reflect the current theme state on the button
+      function syncBtn() {
+        var on = html.getAttribute('data-theme') === DARK;
+        btn.setAttribute('aria-pressed', String(on));
+        btn.setAttribute('aria-label', on ? 'Switch to light theme' : 'Switch to dark theme');
+      }
+
+      // Align button with whatever the anti-FOUC script already set
+      syncBtn();
+
+      btn.addEventListener('click', function () {
+        var goingDark = html.getAttribute('data-theme') !== DARK;
+        if (goingDark) {
+          html.setAttribute('data-theme', DARK);
+        } else {
+          html.removeAttribute('data-theme');
+        }
+        try { localStorage.setItem(KEY, goingDark ? DARK : 'light'); } catch (e) {}
+        syncBtn();
+      });
+    }());
+
+    // ── Research tab filtering ───────────────────────────────
+    // Wrapped in an IIFE to keep variables out of the global scope.
+    (function () {
+      var tabs   = document.querySelectorAll('.res-tab');
+      var themes = document.querySelectorAll('.research-theme');
+
+      if (!tabs.length || !themes.length) return;
+
+      // Convert NodeList to Array once — reused for keyboard nav index math
+      var tabArray = Array.prototype.slice.call(tabs);
+
+      function applyFilter(filter) {
+        themes.forEach(function (theme) {
+          // Show every theme under "all";
+          // otherwise match only when data-theme equals the filter string.
+          theme.hidden = (filter !== 'all') &&
+                         (theme.getAttribute('data-theme') !== filter);
+        });
+      }
+
+      function activateTab(tab) {
+        // Deactivate all tabs
+        tabs.forEach(function (t) {
+          t.classList.remove('res-tab--active');
+          t.setAttribute('aria-selected', 'false');
+        });
+        // Activate the clicked / focused tab
+        tab.classList.add('res-tab--active');
+        tab.setAttribute('aria-selected', 'true');
+        // Run the visibility filter
+        applyFilter(tab.getAttribute('data-filter'));
+      }
+
+      // Click handler
+      tabs.forEach(function (tab) {
+        tab.addEventListener('click', function () {
+          activateTab(this);
+        });
+      });
+
+      // Keyboard: ArrowRight / ArrowLeft move focus and activate next / prev tab
+      // This matches the ARIA tab widget keyboard pattern.
+      tabs.forEach(function (tab, i) {
+        tab.addEventListener('keydown', function (e) {
+          var next;
+          if (e.key === 'ArrowRight') {
+            next = tabArray[(i + 1) % tabArray.length];
+          } else if (e.key === 'ArrowLeft') {
+            next = tabArray[(i - 1 + tabArray.length) % tabArray.length];
+          }
+          if (next) {
+            next.focus();
+            activateTab(next);
+          }
+        });
+      });
+    }());
   </script>
 
 </body>
