@@ -39,6 +39,10 @@
   --amber-xlt:  #eedfc8;
   --amber-dim:  rgba(110,74,20,.07);
 
+  --slate:      #384f63;   /* computational/technical theme            */
+  --slate-xlt:  #c9d6e0;
+  --slate-dim:  rgba(56,79,99,.07);
+
   /* ── Text & neutrals ── */
   --ink:        #191d19;   /* near-black text                          */
   --ink-2:      #38453a;   /* secondary text                           */
@@ -455,6 +459,17 @@ button {
   border-color: var(--pine);
 }
 
+.pillar-tag--tech {
+  color: var(--slate);
+  background: var(--slate-dim);
+  border-color: var(--slate-xlt);
+}
+.pillar-tag--tech:hover {
+  background: var(--slate);
+  color: #fff;
+  border-color: var(--slate);
+}
+
 .pillar-num {
   font-size: var(--t-2xs);
   font-weight: 800;
@@ -822,6 +837,78 @@ button {
 .abs-panel[hidden] { display: none; }
 
 
+/* ── 07b. Technical Portfolio ────────────────────────────── */
+.tech-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: var(--s6);
+  margin-bottom: var(--s10);
+}
+
+.tech-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--s3);
+  padding: var(--s6);
+  background: var(--bg);
+  border: 1px solid var(--border);
+  border-top: 3px solid var(--slate);
+  border-radius: var(--r-lg);
+  box-shadow: var(--sh-sm);
+  transition: box-shadow var(--t), border-color var(--t), transform var(--tf);
+}
+.tech-card:hover {
+  box-shadow: var(--sh-md);
+  border-color: var(--slate-xlt);
+  border-top-color: var(--slate);
+  transform: translateY(-2px);
+}
+
+.tech-card-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--s3);
+}
+
+.tech-card-title {
+  font-family: var(--serif);
+  font-size: var(--t-lg);
+  color: var(--ink);
+  line-height: 1.3;
+}
+
+.tech-card-desc {
+  font-size: var(--t-sm);
+  color: var(--ink-2);
+  line-height: 1.7;
+  flex: 1;
+}
+
+/* Stack strip beneath the card grid */
+.tech-stack-strip {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: var(--s3);
+  padding-top: var(--s6);
+  border-top: 1px solid var(--border);
+}
+.tech-stack-label {
+  font-size: var(--t-xs);
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-muted);
+  white-space: nowrap;
+}
+.tag-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--s2);
+}
+
+
 /* ── 08. Teaching ────────────────────────────────────────── */
 .teaching-layout {
   display: grid;
@@ -1105,6 +1192,8 @@ button {
   .teaching-layout { grid-template-columns: 1fr; gap: var(--s10); }
   .teach-inst-row  { grid-template-columns: 1fr; }
 
+  .tech-grid { grid-template-columns: 1fr 1fr; }
+
   .contact-grid { grid-template-columns: 1fr 1fr; gap: var(--s8); }
 }
 
@@ -1173,6 +1262,10 @@ button {
 
   /* Teaching */
   .teach-inst-row { grid-template-columns: 1fr; }
+
+  /* Technical Portfolio */
+  .tech-grid { grid-template-columns: 1fr; }
+  .tech-stack-strip { flex-direction: column; align-items: flex-start; gap: var(--s2); }
 }
 
 
